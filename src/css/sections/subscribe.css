@@ -105,7 +105,9 @@
 .intup-modal:hover{
     border-color: #0A224A;
 }
-
+.intup-modal:invalid:not(:placeholder-shown)+.icon {
+    fill: red;
+}
 .intup-modal:hover {
 
 

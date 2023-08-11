@@ -1,4 +1,4 @@
-<section class="subscribe">
+<section class="subscribe" id="subscribe-section">
   <div class="secondary-container">
     <h2 class="title-subscribe">Newsletter</h2>
     <p class="modal-described">
@@ -17,23 +17,25 @@
             pattern=".{2,16}"
           />
         </label>
+        <svg width="18" height="18" class="icon">
+          <use href="./images/icons.svg#icon-exclamation-point-in-circle"></use>
+        </svg>
       </div>
       <div class="data-email-container">
         <label class="modal-label" for="user-email"></label>
-        <div class="wrapper">
-          <input
-            required
-            type="email"
-            class="intup-modal"
-            id="user-email"
-            placeholder="Email"
-            name="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          />
-          <svg width="18" height="18" class="icon">
-            <use href="./images/icons.svg#"></use>
-          </svg>
-        </div>
+
+        <input
+          required
+          type="email"
+          class="intup-modal"
+          id="user-email"
+          placeholder="Email"
+          name="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
+        <svg width="18" height="18" class="icon">
+          <use href="./images/icons.svg#icon-exclamation-point-in-circle"></use>
+        </svg>
       </div>
       <div class="data-form">
         <input
