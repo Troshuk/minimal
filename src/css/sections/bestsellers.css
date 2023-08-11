@@ -1,3 +1,38 @@
 /*? ------------------------------- Bestsellers ------------------------------- */
+.bestsellers {
+  position: absolute;
+}
+.bestsellers-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.bestseller-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-.bestsellers {}
+.bestsellers-card {
+}
+.product {
+  flex-shrink: 0;
+  left: 16px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+.bestsellers-txt {
+  text-align: left;
+
+  left: 16px;
+  margin-bottom: 10px;
+}
+.bestsellers-price {
+  font-weight: 700;
+  text-align: left;
+
+  left: 16px;
+}
