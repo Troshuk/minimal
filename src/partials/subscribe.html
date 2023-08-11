@@ -1,7 +1,9 @@
 <section class="subscribe">
   <div class="secondary-container">
     <h2 class="title-subscribe">Newsletter</h2>
-    <p>Every week we will send you new designs and information about sales.</p>
+    <p class="modal-described">
+      Every week we will send you new designs and information about sales.
+    </p>
     <form class="form-modal" autocomplete="off">
       <div class="data-form-container">
         <label for="user-name" class="modal-label">
@@ -15,22 +17,18 @@
           />
         </label>
       </div>
-      <div class="data-form-container">
+      <div class="data-email-container">
         <label class="modal-label" for="user-email"></label>
-        <div>
-          <input
-            required
-            type="email"
-            class="modal-email"
-            id="user-email"
-            placeholder="Email"
-            name="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          />
-          <svg width="24" height="24">
-            <use href="./images/icons.svg#icon-x-close"></use>
-          </svg>
-        </div>
+
+        <input
+          required
+          type="email"
+          class="intup-modal"
+          id="user-email"
+          placeholder="Email"
+          name="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
       </div>
       <div class="data-form">
         <input
@@ -70,7 +68,12 @@
             ./images/subscribe/subscribe-mobile.jpg    1x,
             ./images/subscribe/subscribe-mobile-2x.jpg 2x
           "
-          media="(max-width: 480px)"
+          media="(max-width: 375px)"
+        />
+        <img
+          src="./images/subscribe/subscribe-desktop.jpg"
+          alt="sofa"
+          width="343"
         />
       </picture>
     </form>
