@@ -85,6 +85,7 @@
 }
 .wrapper{
     position: relative;
+    width: 536px;
 }
 .data-form{
     margin-bottom: 32px;
@@ -99,14 +100,14 @@
 .intup-modal:hover::placeholder
 {
     color: #0A224A;
-    transition: color 0.3s ease;
+    transition: color var(--transition-time), var(--transition-function);
 }
 
 .intup-modal:hover{
     border-color: #0A224A;
 }
-.intup-modal:invalid:not(:placeholder-shown)+.icon {
-    fill: red;
+.container-img{
+    float: right;
 }
 .intup-modal:hover {
 
@@ -119,8 +120,12 @@
     outline: transparent;
     color: red;
 }
-
-
+.intup-modal:invalid:not(:placeholder-shown)+.icon {
+    fill: red;
+}
+.intup-modal:invalid:not(:placeholder-shown)+.icon {
+    stroke: red;
+}
 .modal-span {
     width: 25px;
     height: 25px;
