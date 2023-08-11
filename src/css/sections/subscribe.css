@@ -179,15 +179,10 @@
   }
    .data-form-container{
     margin-bottom: 21px;
+   
    }
    .button-modal{
     width: 224px;
    }
-        .container-img{
-            display: flex;
-                align-items: flex-end;
-                justify-content: flex-end;
-                
-        }
-   
+     
 }
