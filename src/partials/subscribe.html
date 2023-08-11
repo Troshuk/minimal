@@ -1,3 +1,78 @@
 <section class="subscribe">
-  <div class="secondary-container">Subscribe</div>
+  <div class="secondary-container">
+    <h2 class="title-subscribe">Newsletter</h2>
+    <p>Every week we will send you new designs and information about sales.</p>
+    <form class="form-modal" autocomplete="off">
+      <div class="data-form-container">
+        <label for="user-name" class="modal-label">
+          <input
+            required
+            id="user-name"
+            name="user-name"
+            type="text"
+            class="intup-modal"
+            placeholder="Name"
+          />
+        </label>
+      </div>
+      <div class="data-form-container">
+        <label class="modal-label" for="user-email"></label>
+        <div>
+          <input
+            required
+            type="email"
+            class="modal-email"
+            id="user-email"
+            placeholder="Email"
+            name="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="data-form">
+        <input
+          id="user-privacy"
+          type="checkbox"
+          value="true"
+          name="user-privacy"
+          class="visually-hidden input-check"
+        />
+        <label for="user-privacy" class="data-label">
+          <span class="modal-span"
+            ><svg class="check" width="10" height="8">
+              <use href="./images/icons.svg#icon-check1"></use>
+            </svg>
+          </span>
+          Agree to subscribe to the newsletter
+        </label>
+      </div>
+      <button type="submit" class="button-modal">Send</button>
+      <picture>
+        <source
+          srcset="
+            ./images/subscribe/subscribe-desktop.jpg     1x,
+            ../images/subscribe/subscribe-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe/subscribe-tablet.jpg    1x,
+            ./images/subscribe/subscribe-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe/subscribe-mobile.jpg    1x,
+            ./images/subscribe/subscribe-mobile-2x.jpg 2x
+          "
+          media="(max-width: 480px)"
+        />
+      </picture>
+    </form>
+  </div>
 </section>
