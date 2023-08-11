@@ -102,11 +102,11 @@
     transition: color 0.3s ease;
 }
 
-input#user-email:hover{
+.intup-modal:hover{
     border-color: #0A224A;
 }
 
-input#user-name:hover {
+.intup-modal:hover {
 
 
     border-color: #0A224A;
