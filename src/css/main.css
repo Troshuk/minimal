@@ -5,6 +5,12 @@
 /*? Fonts */
 @import url('./fonts.css');
 
+/*? Global Variables */
+@import url('./variables.css');
+
+/*? Default styles */
+@import url('./defaults.css');
+
 /*? Header */
 @import url('./sections/header.css');
 
@@ -19,51 +25,6 @@
 
 /*? Footer */
 @import url('./sections/footer.css');
-
-/*? Global Variables */
-@import url('./variables.css');
-
-/* Default styles */
-body {
-    font-family: var(--main-font);
-    color: var(--color-blue);
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.container,
-.secondary-container {
-    width: 100%;
-    margin: 0 auto;
-    /* content width + 15px for each side (left and right) */
-    max-width: var(--container-max-width);
-    padding: 0 var(--container-side-padding);
-}
-
-.secondary-container {
-    /* content width + 15px for each side (left and right) */
-    max-width: var(--secondary-container-max-width);
-}
-
-.section-title {
-    font-size: 28px;
-    text-transform: uppercase;
-}
-
 
 /*? ------------------------ MEDIA ------------------------ */
 
