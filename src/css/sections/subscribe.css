@@ -37,11 +37,6 @@
 }
 
 .intup-modal{
-    color:  #D9D9D9;
-    font-family: var(--main-font);
-    font-size: 16px; 
-    font-weight: 400;
-    line-height: 1.5;
     padding: 11px 20px;
     border: 1px solid #B6B6B6;
     width: 100%;
@@ -51,7 +46,7 @@
     background-color: #0A224A;
     border: none;
     fill: transparent;
-    color: white;
+    stroke: #ffffff;
     border-color: #0A224A;
 }
 
@@ -62,6 +57,9 @@
         font-weight: 400;
         line-height: 1.5;
        
+}
+.intup-modal:invalid:not(:placeholder-shown)+.icon {
+    stroke: red;
 }
 .button-modal{
   padding: 17px 65px;
@@ -77,11 +75,26 @@
         margin-bottom: 30px;
 
 }
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    fill: transparent;
+}
+.wrapper{
+    position: relative;
+}
 .data-form{
     margin-bottom: 32px;
 }
 .intup-modal::placeholder{
     color: #D9D9D9;
+  
+        font-family: var(--main-font);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
 }
 .intup-modal:invalid:not(:placeholder-shown) {
     border: 2px solid red;
@@ -103,4 +116,78 @@
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+@media screen and (min-width: 768px){
+    .subscribe{
+      
+        padding: 100px 0;
+       
+    }
+   
+    .data-label{
+          
+                
+                font-size: 18px;
+                
+    }
+    .title-subscribe{
+        text-align: start;
+        font-size: 32px;
+            font-weight: 400;
+            line-height: 1.46;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            
+    }
+    .data-form-container{
+        margin-bottom: 20px;
+    }
+    .modal-described{
+         font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            width: 536px;
+    }
+   .intup-modal{
+    width: 536px;
+   }
+   .intup-modal::placeholder {
+       color: #D9D9D9;
+       font-size: 18px;
+      
+   }
+        .button-modal {
+            margin-bottom: 64px;
+        }
+}
+@media screen and (min-width: 1440px){
+  
+.title-subscribe{
+       
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 31px;
+     
+        
+}
+  .modal-described{
+   
+     margin-bottom: 21px;
+        
+        
+  }
+   .data-form-container{
+    margin-bottom: 21px;
+   }
+   .button-modal{
+    width: 224px;
+   }
+        .container-img{
+            display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                
+        }
+   
 }

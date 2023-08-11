@@ -14,21 +14,26 @@
             type="text"
             class="intup-modal"
             placeholder="Name"
+            pattern=".{2,16}"
           />
         </label>
       </div>
       <div class="data-email-container">
         <label class="modal-label" for="user-email"></label>
-
-        <input
-          required
-          type="email"
-          class="intup-modal"
-          id="user-email"
-          placeholder="Email"
-          name="Email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-        />
+        <div class="wrapper">
+          <input
+            required
+            type="email"
+            class="intup-modal"
+            id="user-email"
+            placeholder="Email"
+            name="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <svg width="18" height="18" class="icon">
+            <use href="./images/icons.svg#"></use>
+          </svg>
+        </div>
       </div>
       <div class="data-form">
         <input
@@ -40,7 +45,7 @@
         />
         <label for="user-privacy" class="data-label">
           <span class="modal-span"
-            ><svg class="check" width="10" height="8">
+            ><svg class="check" width="13" height="13">
               <use href="./images/icons.svg#icon-check1"></use>
             </svg>
           </span>
@@ -48,34 +53,38 @@
         </label>
       </div>
       <button type="submit" class="button-modal">Send</button>
-      <picture>
-        <source
-          srcset="
-            ./images/subscribe/subscribe-desktop.jpg     1x,
-            ../images/subscribe/subscribe-desktop-2x.jpg 2x
-          "
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="
-            ./images/subscribe/subscribe-tablet.jpg    1x,
-            ./images/subscribe/subscribe-tablet-2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/subscribe/subscribe-mobile.jpg    1x,
-            ./images/subscribe/subscribe-mobile-2x.jpg 2x
-          "
-          media="(max-width: 375px)"
-        />
-        <img
-          src="./images/subscribe/subscribe-desktop.jpg"
-          alt="sofa"
-          width="343"
-        />
-      </picture>
+      <div class="container-img">
+        <picture>
+          <source
+            srcset="
+              ./images/subscribe/subscribe-desktop.jpg     1x,
+              ../images/subscribe/subscribe-desktop-2x.jpg 2x
+            "
+            width="460"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/subscribe/subscribe-tablet.jpg    1x,
+              ./images/subscribe/subscribe-tablet-2x.jpg 2x
+            "
+            width="704"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/subscribe/subscribe-mobile.jpg    1x,
+              ./images/subscribe/subscribe-mobile-2x.jpg 2x
+            "
+            media="(max-width: 375px)"
+          />
+          <img
+            src="./images/subscribe/subscribe-desktop.jpg"
+            alt="sofa"
+            width="343"
+          />
+        </picture>
+      </div>
     </form>
   </div>
 </section>
