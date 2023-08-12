@@ -51,6 +51,10 @@
 /* -------Tablet------- */
 
 @media (min-width: 768px) {
+  .price {
+    margin-top: 100px;
+  }
+
   .article-name {
     font-size: 32px;
     line-height: 1.4;
