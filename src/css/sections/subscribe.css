@@ -147,10 +147,15 @@
 @media screen and (min-width: 768px){
     
     .subscribe{
-        
+        position: none;
         padding: 100px 0;
        
     }
+                .container-img {
+                    position: none;
+                    bottom: 0;
+                    right: 0;
+                }
         
     .data-label{
           
@@ -198,7 +203,7 @@
     .container-img {
             position: absolute;
             bottom: 20%;
-            right: 15%;
+            right: 14%;
         }
     
 .title-subscribe{
