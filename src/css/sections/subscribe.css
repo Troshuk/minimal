@@ -108,6 +108,9 @@
 .intup-modal:hover{
     border-color: #0A224A;
 }
+.secondary-container{
+    padding: 0;
+}
 .container-img{
 
         position: none;
