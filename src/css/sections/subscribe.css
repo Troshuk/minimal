@@ -85,7 +85,8 @@
 }
 .wrapper{
     position: relative;
-    width: 536px;
+    max-width: 536px;
+  
 }
 .data-form{
     margin-bottom: 32px;
@@ -116,7 +117,7 @@
 
 }
 .intup-modal:invalid:not(:placeholder-shown) {
-    border: 2px solid red;
+    border: 1px solid #E74A3B;
     outline: transparent;
     color: red;
 }
@@ -143,7 +144,7 @@
         padding: 100px 0;
        
     }
-   
+        
     .data-label{
           
                 
@@ -180,9 +181,12 @@
         .button-modal {
             margin-bottom: 64px;
         }
+                  
+
 }
 @media screen and (min-width: 1440px){
-  
+    
+    
 .title-subscribe{
        
         font-size: 32px;
