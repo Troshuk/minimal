@@ -1,5 +1,6 @@
 /*? ------------------------------- Bestsellers ------------------------------- */
 .bestsellers {
+  margin-top: 64px;
   position: absolute;
 }
 .bestsellers-title {
@@ -8,6 +9,11 @@
   position: relative;
   text-align: center;
   margin-bottom: 21px;
+}
+.bestseller-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 .bestseller-list {
   display: flex;
@@ -33,6 +39,36 @@
 .bestsellers-price {
   font-weight: 700;
   text-align: left;
-
   left: 16px;
+}
+.mobile-hide {
+  display: none;
+}
+
+/*? ------------------------ MEDIA ------------------------ */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .bestsellers {
+    margin-top: 100px;
+  }
+  .bestseller-container {
+    padding: 0 var(--container-side-padding);
+  }
+  .bestsellers-title {
+    margin-bottom: 30px;
+  }
+  .product {
+    top: 75px;
+    margin-bottom: 15px;
+  }
+  .bestsellers-txt {
+    margin-bottom: 10px;
+  }
+  .mobile-hide {
+    display: block;
+  }
+  .tablet-hide {
+    display: block;
+  }
 }
