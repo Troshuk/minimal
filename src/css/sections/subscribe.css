@@ -1,6 +1,7 @@
 /*? ------------------------------- Subscribe ------------------------------- */
 .subscribe{
     padding: 64px 0;
+    
 }
 .title-subscribe{
         color: var(--color-blue);
@@ -108,8 +109,13 @@
     border-color: #0A224A;
 }
 .container-img{
-    float: right;
+
+        position: none;
+        bottom: 0;
+        right: 0;
+    
 }
+
 .intup-modal:hover {
 
 
@@ -139,8 +145,9 @@
 }
 
 @media screen and (min-width: 768px){
+    
     .subscribe{
-      
+        
         padding: 100px 0;
        
     }
@@ -185,7 +192,14 @@
 
 }
 @media screen and (min-width: 1440px){
-    
+    .subscribe{
+        position: relative;
+    }
+    .container-img {
+            position: absolute;
+            bottom: 20%;
+            right: 10%;
+        }
     
 .title-subscribe{
        
