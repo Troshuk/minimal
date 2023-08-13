@@ -1,6 +1,38 @@
 <section class="subscribe" id="subscribe-section">
-  <div class="container-img">
-    <div class="secondary-container">
+  <div class="secondary-container container-img-subscribe">
+    <picture>
+      <source
+        srcset="
+          ./images/subscribe/subscribe-desktop.jpg    1x,
+          ./images/subscribe/subscribe-desktop-2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ./images/subscribe/subscribe-tablet.jpg    1x,
+          ./images/subscribe/subscribe-tablet-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/subscribe/subscribe-mobile.jpg    1x,
+          ./images/subscribe/subscribe-mobile-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        srcset="
+          ./images/subscribe/subscribe-tablet.jpg    1x,
+          ./images/subscribe/subscribe-tablet-2x.jpg 2x
+        "
+        width="704"
+        alt="sofa"
+      />
+    </picture>
+
+    <div class="content-container">
       <h2 class="title-subscribe">Newsletter</h2>
       <p class="modal-described-subscribe">
         Every week we will send you new designs and information about sales.
@@ -11,7 +43,7 @@
           <div class="wrapper-subscribe">
             <input
               required
-              type="Name"
+              type="text"
               class="input-modal-subscribe"
               id="user-name"
               placeholder="Name"
@@ -60,42 +92,6 @@
         </div>
         <button type="submit" class="button-modal-subscribe">Send</button>
       </form>
-      <picture>
-        <source
-          class="img-subscribe"
-          srcset="
-            ./images/subscribe/subscribe-desktop.jpg    1x,
-            ./images/subscribe/subscribe-desktop-2x.jpg 2x
-          "
-          media="(min-width: 1440px)"
-        />
-        <source
-          class="img-subscribe"
-          srcset="
-            ./images/subscribe/subscribe-tablet.jpg    1x,
-            ./images/subscribe/subscribe-tablet-2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          class="img-subscribe"
-          srcset="
-            ./images/subscribe/subscribe-mobile.jpg    1x,
-            ./images/subscribe/subscribe-mobile-2x.jpg 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          class="img-subscribe"
-          srcset="
-            ./images/subscribe/subscribe-tablet.jpg    1x,
-            ./images/subscribe/subscribe-tablet-2x.jpg 2x
-          "
-          width="704"
-          alt="sofa"
-          class="img-subscribe"
-        />
-      </picture>
     </div>
   </div>
 </section>
