@@ -84,7 +84,7 @@
   flex-direction: column;
 }
 .data-form-subscribe {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 .input-modal-subscribe::placeholder {
   color: var(--color-grey);
@@ -93,6 +93,7 @@
   font-weight: 400;
   line-height: 1.5;
 }
+
 .input-modal-subscribe:hover::placeholder {
   color: var(--color-blue);
   transition: color var(--transition-time), var(--transition-function);
@@ -141,7 +142,9 @@
   .input-modal-subscribe::placeholder {
     font-size: 18px;
   }
-
+  .input-modal-subscribe {
+    font-size: 18px;
+  }
   .img-subscribe {
     height: 396px;
     width: 704px;
@@ -180,6 +183,7 @@
     color: var(--color-grey);
     font-size: 18px;
   }
+
   .button-modal-subscribe {
     margin-bottom: 64px;
   }
