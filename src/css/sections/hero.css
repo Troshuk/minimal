@@ -1,4 +1,5 @@
 /*? ------------------------------- Hero ------------------------------- */
+
 .hero {
   padding-top: 140px;
   padding-bottom: 313px;
@@ -69,12 +70,13 @@
   .main__title {
     width: 648px;
     font-size: 50px;
+    margin-bottom: 410px;
   }
   .hero__text {
     width: 312px;
     font-size: 18px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
   }
 
   .hero__btn {
@@ -109,7 +111,6 @@
   }
 
   .hero__decor {
-    /* position: relative; */
     height: 530px;
     background: url('./../images/hero/hero-1-desktop.jpg') 0 100% / 310px auto
         no-repeat,
@@ -128,10 +129,14 @@
           no-repeat;
     }
   }
-  .hero__content {
-    margin-left: 1011px;
-    margin-top: -200px;
+  .hero__decor {
+    display: flex;
+    justify-content: space-between;
   }
+  .hero__content {
+    align-self: flex-end;
+  }
+
   .hero__text {
     margin-top: 59px;
     margin-bottom: 30px;
