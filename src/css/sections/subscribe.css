@@ -1,234 +1,213 @@
 /*? ------------------------------- Subscribe ------------------------------- */
-.subscribe{
-    padding: 64px 0;
-    
+.subscribe {
+  padding: 64px 0;
 }
-.title-subscribe{
-        color: var(--color-blue);
-        font-family: var(--main-font);
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 1.5;     
-        text-transform: uppercase;      
-        margin-bottom: 20px;
-            text-align: center;
+.title-subscribe {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.modal-described{
-    color: var(--color-blue);
-        font-family: var(--main-font);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-bottom: 30px;
-        
+.modal-described-subscribe {
+  color: var(--color-blue);
+  font-family: var(--main-font);
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 .container-button-footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.data-form-container{
-    margin-bottom: 20px;
-}
-.data-email-container{
-    margin: 0;
-}
-.data-email-container{
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.intup-modal{
-    padding: 11px 20px;
-    border: 1px solid #B6B6B6;
-    width: 100%;
-    height: 50px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.data-form-container-subscribe {
+  margin-bottom: 20px;
 }
-.input-check:checked+.data-label>.modal-span {
-    background-color: #0A224A;
-    border: none;
-    fill: transparent;
-    stroke: #ffffff;
-    border-color: #0A224A;
+.data-email-container-subscribe {
+  margin: 0;
+}
+.data-email-container-subscribe {
+  margin-bottom: 20px;
 }
 
-.data-label {
-         color: #7A7A7A;
-        font-family: var(--main-font);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-       
+.input-modal-subscribe {
+  padding: 13px 20px;
+  border: 1px solid var(--color-dark-grey);
+  width: 100%;
+  height: 50px;
+  transition: border-color var(--transition-time), var(--transition-function);
 }
-.intup-modal:invalid:not(:placeholder-shown)+.icon {
-    stroke: red;
+.input-check-subscribe:checked + .data-label-subscribe > .modal-span-subscribe {
+  background-color: var(--color-blue);
+  border: none;
+  fill: transparent;
+  stroke: #ffffff;
+  border-color: var(--color-blue);
 }
-.button-modal{
+
+.data-label-subscribe {
+  color: #7a7a7a;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.button-modal-subscribe {
   padding: 17px 65px;
-  background-color: #0A224A;
-    color: #ffffff;
-    min-width: 224px;
-    min-height: 50px;
-    color: #fff;
-        font-family: var(--main-font);
-        font-size: 16px;     
-        font-weight: 400;
-        line-height: 1.5;
-        margin-bottom: 30px;
-
+  background-color: var(--color-blue);
+  color: #ffffff;
+  min-width: 224px;
+  max-height: 50px;
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
-.icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    fill: transparent;
+.icon-error {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  fill: transparent;
 }
-.wrapper{
-    position: relative;
-    max-width: 536px;
-  
+.wrapper-subscribe {
+  max-width: 536px;
+  position: relative;
 }
-.data-form{
-    margin-bottom: 32px;
+.container-img {
+  display: flex;
+  flex-direction: row;
 }
-.intup-modal::placeholder{
-    color: #D9D9D9;
-        font-family: var(--main-font);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
+.data-form-subscribe {
+  margin-bottom: 32px;
 }
-.intup-modal:hover::placeholder
-{
-    color: #0A224A;
-    transition: color var(--transition-time), var(--transition-function);
+.input-modal-subscribe::placeholder {
+  color: var(--color-grey);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
-
-.intup-modal:hover{
-    border-color: #0A224A;
-}
-.secondary-container{
-    padding: 0;
-}
-.container-img{
-
-        position: none;
-        bottom: 0;
-        right: 0;
-    
+.input-modal-subscribe:hover::placeholder {
+  color: var(--color-blue);
+  transition: color var(--transition-time), var(--transition-function);
 }
 
-.intup-modal:hover {
-
-
-    border-color: #0A224A;
-
+.input-modal-subscribe:hover {
+  border-color: var(--color-blue);
 }
-.intup-modal:invalid:not(:placeholder-shown) {
-    border: 1px solid #E74A3B;
-    outline: transparent;
-    color: red;
-}
-.intup-modal:invalid:not(:placeholder-shown)+.icon {
-    fill: red;
-}
-.intup-modal:invalid:not(:placeholder-shown)+.icon {
-    stroke: red;
-}
-.modal-span {
-    width: 25px;
-    height: 25px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
+.secondary-container {
+  padding: 0;
 }
 
-@media screen and (min-width: 768px){
-    
-    .subscribe{
-        position: none;
-        padding: 100px 0;
-       
-    }
-                .container-img {
-                    position: none;
-                    bottom: 0;
-                    right: 0;
-                }
-        
-    .data-label{
-          
-                
-                font-size: 18px;
-                
-    }
-    .title-subscribe{
-        text-align: start;
-        font-size: 32px;
-            font-weight: 400;
-            line-height: 1.46;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            
-    }
-    .data-form-container{
-        margin-bottom: 20px;
-    }
-    .modal-described{
-         font-size: 18px;
-            font-weight: 400;
-            line-height: 1.5;
-            margin-bottom: 20px;
-            width: 536px;
-    }
-   .intup-modal{
-    width: 536px;
-   }
-   .intup-modal::placeholder {
-       color: #D9D9D9;
-       font-size: 18px;
-      
-   }
-        .button-modal {
-            margin-bottom: 64px;
-        }
-                  
+.img-subscribe {
+  height: 300px;
+  width: 343px;
+}
+.input-modal-subscribe:invalid:not(:placeholder-shown) {
+  border: 1px solid #e74a3b;
+  outline: transparent;
+  color: red;
+}
+.input-modal-subscribe:invalid:not(:placeholder-shown) + .icon-error {
+  fill: red;
+}
 
+.modal-span-subscribe {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color var(--transition-time),
+    var(--transition-function), border var(--transition-time),
+    var(--transition-function), fill var(--transition-time),
+    var(--transition-function);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
 }
-@media screen and (min-width: 1440px){
-    .subscribe{
-        position: relative;
-    }
-    .container-img {
-            position: absolute;
-            bottom: 20%;
-            right: 14%;
-        }
-    
-.title-subscribe{
-       
-        font-size: 32px;
-        line-height: 1.4;
-        margin-bottom: 31px;
-     
-        
-}
-  .modal-described{
-   
-     margin-bottom: 21px;
-        
-        
+
+@media screen and (min-width: 768px) {
+  .input-modal-subscribe::placeholder {
+    font-size: 18px;
   }
-   .data-form-container{
+
+  .img-subscribe {
+    height: 396px;
+    width: 704px;
+  }
+  .input-modal-subscribe {
+    padding: 11px 20px;
+  }
+  .subscribe {
+    padding: 100px 0;
+  }
+
+  .data-label-subscribe {
+    font-size: 18px;
+  }
+  .title-subscribe {
+    text-align: start;
+    font-size: 32px;
+    line-height: 1.46;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .data-form-container {
+    margin-bottom: 20px;
+  }
+  .modal-described-subscribe {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 536px;
+  }
+  .input-modal-subscribe {
+    width: 536px;
+  }
+  .input-modal-subscribe::placeholder {
+    color: var(--color-grey);
+    font-size: 18px;
+  }
+  .button-modal-subscribe {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe {
+    padding-bottom: 86px;
+  }
+
+  .img-subscribe {
+    height: 410px;
+    width: 460px;
+  }
+  .input-modal-subscribe {
+    padding: 11px 20px;
+  }
+  .button-modal-subscribe {
+    margin-bottom: 0;
+  }
+
+  .title-subscribe {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 31px;
+  }
+  .modal-described-subscribe {
     margin-bottom: 21px;
-   
-   }
-   .button-modal{
+  }
+  .data-form-container {
+    margin-bottom: 21px;
+  }
+  .button-modal-subscribe {
     width: 224px;
-   }
-     
+  }
 }
