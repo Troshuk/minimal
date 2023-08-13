@@ -16,46 +16,51 @@
 
 .main__title {
   width: 285px;
-  color: var(--color-blue);
+
   font-family: var(--hero-font);
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.5;
+
   text-transform: uppercase;
 }
 
-.hero__text:not(:last-child) {
+.hero__text {
   margin-top: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 28px;
 }
 .hero__btn {
-  display: flex;
+  display: block;
   width: 224px;
   padding: 12px 65px;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  background: var(--color-blue);
+
+  text-align: center;
+
+  background-color: var(--color-blue);
   color: var(--color-white);
+}
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #061835;
+}
+
+.hero__btn:active {
+  background-color: #061835;
 }
 /*? ------------------------ MEDIA ------------------------ */
 
 /* Mobile */
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: calc(var(--container-width) + var(--container-side-padding) * 2);
+  .hero {
+    max-width: 375px;
+    margin: 0 auto;
   }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: calc(
-      var(--tablet-container-width) + var(--container-side-padding) * 2
-    );
-  }
   .hero {
-    padding-top: 64px;
+    max-width: 100%;
+    padding-top: 61px;
     padding-bottom: 100px;
     background: none;
     background-color: #fff;
@@ -67,10 +72,10 @@
   .hero__text {
     width: 312px;
     font-size: 18px;
-  }
-  .hero__text:not(:last-child) {
     margin-top: 32px;
     margin-bottom: 32px;
+  }
+  .hero__text {
   }
   .hero__btn {
     font-size: 18px;
@@ -99,14 +104,12 @@
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: calc(
-      var(--desktop-container-width) + var(--container-side-padding) * 2
-    );
+  .hero {
+    padding-top: 64px;
   }
 
   .hero__decor {
-    position: relative;
+    /* position: relative; */
     height: 530px;
     background: url('./../images/hero/hero-1-desktop.jpg') 0 100% / 310px auto
         no-repeat,
@@ -126,10 +129,12 @@
     }
   }
   .hero__content {
-    position: absolute;
-    transform: translate(324%, -100%);
+    margin-left: 1011px;
+    margin-top: -200px;
+    /* position: absolute;
+    transform: translate(324%, -100%); */
   }
-  .hero__text:not(:last-child) {
+  .hero__text {
     margin-top: 59px;
     margin-bottom: 30px;
   }
