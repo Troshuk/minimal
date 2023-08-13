@@ -97,8 +97,12 @@
   color: var(--color-blue);
   transition: color var(--transition-time), var(--transition-function);
 }
-
-.input-modal-subscribe:hover {
+.input-modal-subscribe:focus::placeholder {
+  color: var(--color-blue);
+  transition: color var(--transition-time), var(--transition-function);
+}
+.input-modal-subscribe:hover,
+.input-modal-subscribe:focus {
   border-color: var(--color-blue);
 }
 .secondary-container {
