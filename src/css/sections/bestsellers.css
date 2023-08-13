@@ -24,7 +24,6 @@
   margin: 0 auto;
 }
 .product {
-  flex-shrink: 0;
   margin-bottom: 14px;
   align-items: center;
 }
@@ -83,6 +82,7 @@
     width: 336px;
     max-width: 336px;
     height: auto;
+    /* display: flex; */
   }
 
   /* .mobile-hide {
@@ -127,7 +127,9 @@
   .bestseller-list {
     gap: 24px;
   }
-  .desktop-shift {
-    margin-left: auto;
+  .container-for-img {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
   }
 }
