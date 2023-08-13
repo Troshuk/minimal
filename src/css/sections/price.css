@@ -21,8 +21,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 2px;
+  width: 30px;
+  height: 1px;
   background-color: var(--color-blue);
   opacity: 0;
   transition: var(--transition-time) var(--transition-function);
