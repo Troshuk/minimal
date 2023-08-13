@@ -38,9 +38,6 @@
 /* .mobile-hide {
   display: none;
 } */
-.bestsellers-card.desktop-shift {
-  margin-left: auto;
-}
 
 /*? ------------------------ MEDIA ------------------------ */
 @media screen and (max-width: 767px) {
@@ -128,8 +125,7 @@
     gap: 24px;
   }
   .container-for-img {
-    flex-wrap: wrap;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
   }
 }
