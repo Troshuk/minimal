@@ -81,7 +81,7 @@
 }
 .container-img {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .data-form-subscribe {
   margin-bottom: 32px;
