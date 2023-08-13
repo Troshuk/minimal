@@ -21,29 +21,32 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 1px;
+  width: 0px;
+  height: 3px;
   background-color: var(--color-blue);
   opacity: 0;
-  transition: var(--transition-time) var(--transition-function);
-}
-
-/* bottom line under last price item */
-.price-list:last-child {
-  content: '';
-  border-bottom: 1px solid var(--color-blue);
+  transition: opacity var(--transition-time) var(--transition-function),
+    width var(--transition-time) var(--transition-function);
 }
 
 .price-item:hover {
   cursor: pointer;
+  width: 100%;
+  left: 0;
+}
+
+/* bottom line under last price item */
+.price-item:last-child {
+  border-bottom: 1px solid var(--color-blue);
 }
 
 .price-item:hover::before {
   opacity: 1;
+  width: 50px;
 }
 
 .price-item:hover .article-name {
-  transform: translateX(40px); /* space between line and article name */
+  transform: translateX(70px); /* space between line and article name */
 }
 
 .article-name {
