@@ -52,12 +52,12 @@
 .container-img-subscribe {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 .button-modal-subscribe {
   background-color: var(--color-blue);
   color: #fff;
   padding: 13px 94px;
+  margin-bottom: 30px;
 }
 .icon-error {
   position: absolute;
@@ -84,7 +84,6 @@
   font-weight: 400;
   line-height: 1.5;
 }
-
 .input-modal-subscribe:hover::placeholder {
   color: var(--color-blue);
   transition: color var(--transition-time), var(--transition-function);
@@ -124,7 +123,6 @@
 @media screen and (min-width: 768px) {
   .container-img-subscribe {
     flex-direction: column;
-    gap: 64px;
   }
 
   .input-modal-subscribe::placeholder {
@@ -137,6 +135,7 @@
   .input-modal-subscribe {
     padding: 11px 20px;
   }
+
   .subscribe {
     padding: 100px 0;
   }
@@ -154,6 +153,9 @@
   .data-form-container {
     margin-bottom: 20px;
   }
+  .button-modal-subscribe {
+    margin-bottom: 64px;
+  }
   .modal-described-subscribe {
     font-size: 18px;
     font-weight: 400;
@@ -170,9 +172,17 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .img-sofa {
+    width: 460px;
+  }
   .container-img-subscribe {
-    flex-direction: row;
-    gap: 100px;
+    max-height: 510px;
+    flex-wrap: wrap;
+  }
+
+  .img-sofa {
+    display: flex;
+    gap: 50px;
   }
   .subscribe {
     padding-bottom: 86px;
