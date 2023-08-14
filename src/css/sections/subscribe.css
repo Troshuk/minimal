@@ -178,10 +178,9 @@
   .container-img-subscribe {
     justify-content: space-around;
     flex-direction: row;
+    gap: 100px;
   }
-  .img-sofa {
-    gap: 30px;
-  }
+
   .subscribe {
     padding-bottom: 86px;
   }
