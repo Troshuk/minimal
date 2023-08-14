@@ -32,17 +32,12 @@
     display: flex;
 }
 
-.footer-logo-link {
-
-}
 
 .footer-logo-svg {
     fill: var(--color-white);
 }
 
-.footer-media {
 
-}
 
 .footer-block-container {
     display: flex;
@@ -71,10 +66,6 @@
 
 
 
-.footer-navigation {
-    
-}
-
 .footer-menu {
     display: flex;
     row-gap: 8px;
@@ -90,9 +81,7 @@
 
 }
 
-.footer-menu-link {
 
-}
 
 
 .footer-address-list {
@@ -118,7 +107,7 @@
 }
 
 
-.footer-contacts-info {}
+
 
 .footer-contacts-list {
     display: flex;
@@ -141,8 +130,6 @@
         line-height: 1.5;
         display: none;
 }
-
-.footer-contacts-itemm {}
 
 
 
