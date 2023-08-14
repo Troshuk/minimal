@@ -2,6 +2,7 @@
 .subscribe {
   padding: 64px 0;
 }
+
 .title-subscribe {
   font-size: 28px;
   font-weight: 400;
@@ -10,6 +11,7 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
 .modal-described-subscribe {
   color: var(--color-blue);
   font-family: var(--main-font);
@@ -20,9 +22,11 @@
 .data-form-container-subscribe {
   margin-bottom: 20px;
 }
+
 .data-email-container-subscribe {
   margin: 0;
 }
+
 .data-email-container-subscribe {
   margin-bottom: 20px;
 }
@@ -34,7 +38,8 @@
   height: 50px;
   transition: border-color var(--transition-time), var(--transition-function);
 }
-.input-check-subscribe:checked + .data-label-subscribe > .modal-span-subscribe {
+
+.input-check-subscribe:checked+.data-label-subscribe>.modal-span-subscribe {
   background-color: var(--color-blue);
   border: none;
   fill: transparent;
@@ -49,16 +54,19 @@
   font-weight: 400;
   line-height: 1.5;
 }
+
 .container-img-subscribe {
   display: flex;
   flex-direction: column;
 }
+
 .button-modal-subscribe {
   background-color: var(--color-blue);
   color: #fff;
   padding: 13px 94px;
   margin-bottom: 30px;
 }
+
 .icon-error {
   position: absolute;
   top: 50%;
@@ -66,6 +74,7 @@
   transform: translateY(-50%);
   fill: transparent;
 }
+
 .wrapper-subscribe {
   max-width: 536px;
   position: relative;
@@ -74,9 +83,11 @@
 .data-form-subscribe {
   margin-bottom: 31px;
 }
+
 .input-modal-subscribe {
   font-size: 16px;
 }
+
 .input-modal-subscribe::placeholder {
   color: var(--color-grey);
   font-family: var(--main-font);
@@ -84,14 +95,17 @@
   font-weight: 400;
   line-height: 1.5;
 }
+
 .input-modal-subscribe:hover::placeholder {
   color: var(--color-blue);
   transition: color var(--transition-time), var(--transition-function);
 }
+
 .input-modal-subscribe:focus::placeholder {
   color: var(--color-blue);
   transition: color var(--transition-time), var(--transition-function);
 }
+
 .input-modal-subscribe:hover,
 .input-modal-subscribe:focus {
   border-color: var(--color-blue);
@@ -101,7 +115,8 @@
   border: 1px solid #e74a3b;
   color: red;
 }
-.input-modal-subscribe:invalid:not(:placeholder-shown) + .icon-error {
+
+.input-modal-subscribe:invalid:not(:placeholder-shown)+.icon-error {
   fill: red;
 }
 
@@ -128,6 +143,7 @@
   .input-modal-subscribe::placeholder {
     font-size: 18px;
   }
+
   .input-modal-subscribe {
     font-size: 18px;
   }
@@ -143,6 +159,7 @@
   .data-label-subscribe {
     font-size: 18px;
   }
+
   .title-subscribe {
     text-align: start;
     font-size: 32px;
@@ -150,12 +167,15 @@
     text-transform: uppercase;
     margin-bottom: 30px;
   }
+
   .data-form-container {
     margin-bottom: 20px;
   }
+
   .button-modal-subscribe {
     margin-bottom: 64px;
   }
+
   .modal-described-subscribe {
     font-size: 18px;
     font-weight: 400;
@@ -163,22 +183,25 @@
     margin-bottom: 20px;
     width: 536px;
   }
+
   .input-modal-subscribe {
     width: 536px;
   }
+
   .input-modal-subscribe::placeholder {
     color: var(--color-grey);
     font-size: 18px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .img-sofa {
     width: 460px;
   }
+
   .container-img-subscribe {
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 100px;
   }
 
   .subscribe {
@@ -189,6 +212,7 @@
     padding: 11px 20px;
     font-size: 18px;
   }
+
   .button-modal-subscribe {
     margin-bottom: 0;
   }
@@ -198,12 +222,15 @@
     line-height: 1.4;
     margin-bottom: 31px;
   }
+
   .modal-described-subscribe {
     margin-bottom: 21px;
   }
+
   .data-form-container {
     margin-bottom: 21px;
   }
+
   .button-modal-subscribe {
     width: 224px;
     margin-bottom: 0;
