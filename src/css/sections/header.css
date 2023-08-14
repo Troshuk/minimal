@@ -1,2 +1,91 @@
 /*? ------------------------------- Header ------------------------------- */
+.header-container {display: flex;
+                   align-items: center;
+                   background-color:#F7FAFF ;}
+                   
 
+.list { list-style: none;}
+
+
+.link { text-decoration: none;}
+
+.header {  }
+
+
+
+.navigation {display: flex;
+            margin-top:26px;
+            margin-bottom:26px ; }
+
+
+.logo-head {margin-right: 520px; }
+
+
+
+.header-icon {margin-left: 60px;
+
+ }
+
+
+.navigation-list {display: flex;
+                  align-items: center;
+                  gap:30px;
+                  
+}
+
+.navigation-item 
+
+.navigation-link:hover {
+    color: #0A224A;
+} 
+
+
+.navigation-link:focus {
+    color: #0A224A;
+}
+
+
+
+.navigation-link {font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; }
+
+
+
+    /* mob menu */
+
+
+        .mob-menu {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            
+
+
+        }
+    
+        .mob-menu-list {}
+
+        .mob-menu-item { }
+
+        .mob-soc-link { }
+        .mob-menu-btn { }
+
+        .burger
+/* ----------------------------------------------------- */
+       /* MEDIA */
+/* Mobile */
+@media screen and (min-width: 375px) {
+    .header-list { display: none;}
+
+
+    
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {}
