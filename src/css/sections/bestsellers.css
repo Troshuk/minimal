@@ -2,6 +2,7 @@
 .bestsellers {
   margin-top: 64px;
 }
+
 .bestsellers-title {
   font-size: 28px;
   text-transform: uppercase;
@@ -98,13 +99,13 @@
     display: block;
   }
   .sec-img {
-    width: 258px;
     max-width: 258px;
-    height: auto;
   }
 
   .container-for-img {
     flex-direction: column;
     gap: 30px 24px;
+    align-items: center;
+    justify-content: center;
   }
 }
