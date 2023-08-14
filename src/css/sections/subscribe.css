@@ -178,7 +178,6 @@
   .container-img-subscribe {
     justify-content: space-around;
     flex-direction: row;
-    gap: 100px;
   }
 
   .subscribe {
