@@ -1,3 +1,144 @@
 /*? ------------------------------- Clients Reviews ------------------------------- */
 
-.clients-reviews {}
+.clients-reviews {
+  background: var(--color-light-blue);
+}
+
+.clients-reviews-container {
+  padding-bottom: 36px;
+  display: flex;
+}
+
+.reviews-title {
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 36px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.review-info {
+  padding-left: 14px;
+}
+
+.client-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 23px 24px 24px;
+  background: var(--color-white);
+  border-radius: 8px;
+  max-width: 344px;
+  height: auto;
+}
+
+.client-name {
+  color: var(--color-blue);
+  font-size: 18px;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.client-week-age {
+  color: var(--color-blue);
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.client-img {
+  display: block;
+}
+
+.reviews-comment {
+  margin-top: 24px;
+  color: var(--color-blue);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Mobile */
+@media screen and (min-width: 375px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .client-block {
+    padding: 24px;
+  }
+
+  .reviews-block {
+    display: flex;
+    width: 100%;
+  }
+
+  .client-img {
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+
+  .reviews-list1 {
+    padding-right: 16px;
+  }
+
+  .client-name {
+    font-size: 20px;
+  }
+
+  .client-week-age {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .reviews-comment {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .clients-reviews-container {
+    padding-bottom: 60px;
+  }
+
+  .reviews-title {
+    padding-top: 60px;
+    flex-direction: row;
+  }
+
+  .client-block {
+    padding: 32px;
+  }
+
+  .reviews-list1,
+  .reviews-list2 {
+    padding-right: 24px;
+  }
+
+  .reviews-comment {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .client-block {
+    max-width: 424px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client-block-2,
+  .client-block-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .client-block-3 {
+    display: none;
+  }
+}
