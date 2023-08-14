@@ -1,3 +1,96 @@
-<section class="subscribe">
-  <div class="secondary-container">Subscribe</div>
+<section class="subscribe" id="subscribe-section">
+  <div class="secondary-container container-img-subscribe">
+    <div>
+      <h2 class="title-subscribe">Newsletter</h2>
+      <p class="modal-described-subscribe">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form autocomplete="off">
+        <div class="data-email-container-subscribe">
+          <label class="modal-label-subscribe" for="user-name"></label>
+          <div class="wrapper-subscribe">
+            <input
+              required
+              type="text"
+              class="input-modal-subscribe"
+              id="user-name"
+              placeholder="Name"
+              name="Name"
+              pattern=".{2,16}"
+            />
+            <svg width="24" height="24" class="icon-error">
+              <use
+                href="./images/icons.svg#icon-exclamation-point-in-circle"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <div class="data-email-container-subscribe">
+          <label class="modal-label-subscribe" for="user-email"></label>
+          <div class="wrapper-subscribe">
+            <input
+              required
+              type="email"
+              class="input-modal-subscribe"
+              id="user-email"
+              placeholder="E-mail"
+              name="Email"
+            />
+            <svg width="24" height="24" class="icon-error">
+              <use
+                href="./images/icons.svg#icon-exclamation-point-in-circle"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <div class="data-form-subscribe">
+          <input
+            id="user-privacy"
+            type="checkbox"
+            value="true"
+            name="user-privacy"
+            class="visually-hidden input-check-subscribe"
+          />
+          <label for="user-privacy" class="data-label-subscribe">
+            <span class="modal-span-subscribe"
+              ><svg width="13" height="13">
+                <use href="./images/icons.svg#icon-check1"></use></svg></span
+            >Agree to subscribe to the newsletter</label
+          >
+        </div>
+        <button type="submit" class="button-modal-subscribe">Send</button>
+      </form>
+    </div>
+    <picture class="img-sofa">
+      <source
+        srcset="
+          ./images/subscribe/subscribe-desktop.jpg    1x,
+          ./images/subscribe/subscribe-desktop-2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ./images/subscribe/subscribe-tablet.jpg    1x,
+          ./images/subscribe/subscribe-tablet-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/subscribe/subscribe-mobile.jpg    1x,
+          ./images/subscribe/subscribe-mobile-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        srcset="
+          ./images/subscribe/subscribe-tablet.jpg    1x,
+          ./images/subscribe/subscribe-tablet-2x.jpg 2x
+        "
+        width="704"
+        alt="sofa"
+      />
+    </picture>
+  </div>
 </section>
