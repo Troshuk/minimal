@@ -67,27 +67,12 @@
   .bestsellers-txt {
     font-size: 18px;
   }
-  /* .sec-pic {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-  } */
 
   .sec-img {
     width: 336px;
     max-width: 336px;
     height: auto;
-    /* display: flex; */
   }
-
-  /* .mobile-hide {
-    display: block;
-  } */
-  /* .large-img {
-    min-width: 704;
-  } */
 }
 /* Desktop */
 @media screen and (min-width: 1440px) {
@@ -117,15 +102,9 @@
     max-width: 258px;
     height: auto;
   }
-  /* .sec-pic {
-    display: flex;
-    flex-wrap: wrap;
-  } */
-  .bestseller-list {
-    gap: 24px;
-  }
+
   .container-for-img {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px 24px;
   }
 }
