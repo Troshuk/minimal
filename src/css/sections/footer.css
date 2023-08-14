@@ -226,7 +226,9 @@
         gap: 0px;
         justify-content: space-between;
         }
-    
+    .footer-logo{
+        padding-top: 12px;
+    }
     .footer-menu{
         display: flex;
         flex-direction: row;
@@ -264,7 +266,9 @@
     .item3 {
         grid-area: C;
         height: 22px;
+        justify-content: right;
     }
+    
 
     .footer-privacy{
         margin-top: 36px;
