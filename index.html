@@ -11,8 +11,8 @@
     <title>MINIMAL</title>
 
     
-    <script type="module" crossorigin src="/minimal/assets/index-2dce9eda.js"></script>
-    <link rel="stylesheet" href="/minimal/assets/index-261747ce.css">
+    <script type="module" crossorigin src="/minimal/assets/index-77fe6d6d.js"></script>
+    <link rel="stylesheet" href="/minimal/assets/index-10bbdf25.css">
   </head>
   <body>
     <!-- Header -->
@@ -121,8 +121,89 @@
   <div class="container">Clients reviews</div>
 </section>
 
-      <section class="subscribe">
-  <div class="secondary-container">Subscribe</div>
+      <section class="subscribe" id="subscribe-section">
+  <div class="secondary-container container-img-subscribe">
+    <div>
+      <h2 class="title-subscribe">Newsletter</h2>
+      <p class="modal-described-subscribe">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form autocomplete="off">
+        <div class="data-email-container-subscribe">
+          <label class="modal-label-subscribe" for="user-name"></label>
+          <div class="wrapper-subscribe">
+            <input
+              required
+              type="text"
+              class="input-modal-subscribe"
+              id="user-name"
+              placeholder="Name"
+              name="Name"
+              pattern=".{2,16}"
+            />
+            <svg width="24" height="24" class="icon-error">
+              <use
+                href="/minimal/assets/icons-ad39f3d3.svg#icon-exclamation-point-in-circle"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <div class="data-email-container-subscribe">
+          <label class="modal-label-subscribe" for="user-email"></label>
+          <div class="wrapper-subscribe">
+            <input
+              required
+              type="email"
+              class="input-modal-subscribe"
+              id="user-email"
+              placeholder="E-mail"
+              name="Email"
+            />
+            <svg width="24" height="24" class="icon-error">
+              <use
+                href="/minimal/assets/icons-ad39f3d3.svg#icon-exclamation-point-in-circle"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <div class="data-form-subscribe">
+          <input
+            id="user-privacy"
+            type="checkbox"
+            value="true"
+            name="user-privacy"
+            class="visually-hidden input-check-subscribe"
+          />
+          <label for="user-privacy" class="data-label-subscribe">
+            <span class="modal-span-subscribe"
+              ><svg width="13" height="13">
+                <use href="/minimal/assets/icons-ad39f3d3.svg#icon-check1"></use></svg></span
+            >Agree to subscribe to the newsletter</label
+          >
+        </div>
+        <button type="submit" class="button-modal-subscribe">Send</button>
+      </form>
+    </div>
+    <picture class="img-sofa">
+      <source
+        srcset="/minimal/assets/subscribe-desktop-fba7dede.jpg 1x, /minimal/assets/subscribe-desktop-2x-a04141c0.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/minimal/assets/subscribe-tablet-1a27bb7b.jpg 1x, /minimal/assets/subscribe-tablet-2x-7b8bf4c3.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/minimal/assets/subscribe-mobile-9a8c33df.jpg 1x, /minimal/assets/subscribe-mobile-2x-529599fa.jpg 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        srcset="/minimal/assets/subscribe-tablet-1a27bb7b.jpg 1x, /minimal/assets/subscribe-tablet-2x-7b8bf4c3.jpg 2x"
+        width="704"
+        alt="sofa"
+      />
+    </picture>
+  </div>
 </section>
 
     </main>
