@@ -1,34 +1,38 @@
 /*? ------------------------------- Footer ------------------------------- */
 
 .f-link {
-    text-decoration: none; 
+    text-decoration: none;
     cursor: pointer;
     transition: color var(--transition-time) var(--transition-function);
 }
+
 .f-link:hover,
-.f-link:focus{
-    color:var(--color-dark-grey);
+.f-link:focus {
+    color: var(--color-dark-grey);
 }
 
 .f-list {
     list-style-type: none;
 }
+
 .footer {
     background-color: var(--color-blue);
 }
 
-.footer-whole-content{
+.footer-whole-content {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 36px;
 }
-.footer-first-block{
+
+.footer-first-block {
     display: flex;
     flex-direction: column;
-    gap:36px;
-    
+    gap: 36px;
+
 }
+
 .footer-logo-link {
     display: flex;
     padding: 6px 0;
@@ -58,7 +62,8 @@
     height: 28px;
     width: 28px;
 }
-.footer-block-link{
+
+.footer-block-link {
     width: 100%;
     height: 100%;
     align-items: center;
@@ -68,10 +73,11 @@
 .footer-icon {
     fill: var(--color-white);
     transition: fill var(--transition-time) var(--transition-function);
-    
+
 }
+
 .footer-icon:hover,
-.footer-icon:focus{
+.footer-icon:focus {
     fill: var(--color-grey);
 }
 
@@ -100,7 +106,7 @@
     font-style: normal;
 }
 
-.footer-time-detail{
+.footer-time-detail {
     color: var(--color-white);
     font-style: normal;
 }
@@ -114,18 +120,19 @@
 
 .footer-contacts-item {
     color: var(--color-white);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
 }
-.footer-contacts-email{
+
+.footer-contacts-email {
     color: var(--color-white);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        display: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    display: none;
 }
 
 
@@ -133,13 +140,13 @@
     margin-top: 64px;
     padding-bottom: 16px;
     color: var(--color-white);
-        text-align: center;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.16;
-        letter-spacing: 0.1em;
-        opacity: 0.6;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
 }
 
 .terms-privacy-link {
@@ -151,7 +158,7 @@
         max-width: 734px;
     }
 
-    .footer-first-block{
+    .footer-first-block {
         display: flex;
         width: 548px;
         height: 310px;
@@ -159,68 +166,79 @@
         gap: 32px;
     }
 
-    .footer-logo-link{
+    .footer-logo-link {
         width: 128px;
         height: 18px;
         padding: 0;
-
     }
-    .footer-logo-svg{
+
+    .footer-logo-svg {
         width: 128px;
         height: 18px;
     }
+
     .footer-nav-list {
         order: 1;
     }
-    .footer-menu{
-        gap:16px;
+
+    .footer-menu {
+        gap: 16px;
         padding: 8px;
     }
-    .footer-menu-item{
+
+    .footer-menu-item {
         font-size: 18px;
         height: 27px;
     }
-    .footer-address-list{
-        gap:24px;
+
+    .footer-address-list {
+        gap: 24px;
     }
-    .footer-address-link{
+
+    .footer-address-link {
         height: 22px;
     }
-    .footer-address-item{
+
+    .footer-address-item {
         font-size: 19px;
         height: 22px;
     }
-    .footer-time-detail{
+
+    .footer-time-detail {
         font-size: 19px;
         height: 22px;
     }
-    .footer-contacts-list{
-        gap:24px;
+
+    .footer-contacts-list {
+        gap: 24px;
         padding-top: 32px;
     }
 
-    .footer-contacts-email{
-        display: flex;
-        align-items: center;
+    .footer-contacts-email {
+        display: block;
         font-size: 19px;
         height: 22px;
     }
-    .footer-contacts-item{
+
+    .footer-contacts-item {
         font-size: 19px;
     }
-    .footer-block-container{
-        gap:16px;
+
+    .footer-block-container {
+        gap: 16px;
     }
-    .footer-block   {
-        width: 40px;
-        height: 40px;
-    }
-    .footer-icon{
+
+    .footer-block {
         width: 40px;
         height: 40px;
     }
 
-    .footer-privacy{
+    .footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-privacy {
         padding-bottom: 36px;
         font-size: 16px;
         font-weight: 400;
@@ -228,64 +246,52 @@
         letter-spacing: 0.07em;
     }
 }
+
 @media screen and (min-width: 1440px) {
     .footer-container {
         max-width: 1380px;
     }
+
     .footer-first-block {
         display: flex;
         width: 854px;
         height: 128px;
         flex-wrap: wrap;
-        column-gap: 120px;
-        gap: 0px;
+        gap: 0 87px;
         justify-content: space-between;
-        }
-    .footer-logo{
+    }
+
+    .footer-logo {
         padding-top: 12px;
     }
-    .footer-menu{
+
+    .footer-menu {
         display: flex;
         flex-direction: row;
-        gap:30px;
-        margin-left: 88px;
+        gap: 30px;
     }
-    .footer-contacts-info{
+
+    .footer-contacts-info {
         order: 1;
-        margin-left: 88px;
     }
 
-    .footer-contacts-list{
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-areas:
-        "A C"
-        "B D";
+    .footer-contacts-list {
+        display: flex;
+        gap: 24px 82px;
+        flex-wrap: wrap;
         height: 68px;
-        width: 481px;
         padding: 0;
-        gap: 24;
-        
-    }
-    .item1{
-        grid-area: A;
-        height: 22px;
-    }
-    .item2 {
-        grid-area: B;
-        height: 22px;
-    }
-    .item3 {
-        grid-area: C;
-        height: 22px;
-        justify-content: right;
     }
 
-    .footer-privacy{
+    .footer-contacts-item {
+        height: 22px;
+    }
+
+    .footer-privacy {
         margin-top: 36px;
     }
-    .footer-block-container{
-        gap:30px;
+
+    .footer-block-container {
+        gap: 30px;
     }
-    
 }
