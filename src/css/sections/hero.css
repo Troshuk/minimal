@@ -2,19 +2,19 @@
 
 .hero {
   padding-top: 140px;
-  padding-bottom: 313px;
+  height: 717px;
   background-color: var(--color-white);
-  background: url(./../images/hero/hero-1-mobile.jpg) center center/100% 100%
-    no-repeat;
+  background: url(./../images/hero/hero-1-mobile.jpg) center center/100% 100% no-repeat;
 }
+
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero {
-    background: url(./../images/hero/hero-1-mobile-2x.jpg) center center/100%
-      100% no-repeat;
+    background: url(./../images/hero/hero-1-mobile-2x.jpg) center center/100% 100% no-repeat;
   }
 }
+
 .main__title {
   width: 285px;
 
@@ -25,10 +25,14 @@
   text-transform: uppercase;
 }
 
-.hero__text {
+.hero__content {
   margin-top: 14px;
+}
+
+.hero__text {
   margin-bottom: 28px;
 }
+
 .hero__btn {
   display: block;
   width: 224px;
@@ -49,6 +53,7 @@
 .hero__btn:active {
   background-color: #061835;
 }
+
 /*? ------------------------ MEDIA ------------------------ */
 
 /* Mobile */
@@ -64,19 +69,23 @@
   .hero {
     max-width: 100%;
     padding-top: 61px;
-    padding-bottom: 100px;
+    height: 100%;
     background: none;
     background-color: #fff;
   }
+
   .main__title {
     width: 648px;
     font-size: 50px;
-    margin-bottom: 410px;
   }
+
+  .hero__content {
+    margin-top: 32px;
+  }
+
   .hero__text {
     width: 312px;
     font-size: 18px;
-    /* margin-top: 30px; */
     margin-bottom: 30px;
   }
 
@@ -85,22 +94,21 @@
     line-height: 1.3;
     padding: 17px 65px;
   }
+
   .hero__decor {
     height: 530px;
 
-    background: url('./../images/hero/hero-1-tablet.jpg') 0 100% / auto auto
-        no-repeat,
+    background: url('./../images/hero/hero-1-tablet.jpg') 0 100% / auto auto no-repeat,
       url('./../images/hero/hero-2-tablet.jpg') 100% 0 / auto auto no-repeat;
   }
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero__decor {
       height: 530px;
-      background: url('./../images/hero/hero-1-tablet-2x.jpg') 0 100% / 308px
-          auto no-repeat,
-        url('./../images/hero/hero-2-tablet-2x.jpg') 100% 0 / 367px auto
-          no-repeat;
+      background: url('./../images/hero/hero-1-tablet-2x.jpg') 0 100% / 308px auto no-repeat,
+        url('./../images/hero/hero-2-tablet-2x.jpg') 100% 0 / 367px auto no-repeat;
     }
   }
 }
@@ -110,38 +118,44 @@
   .hero {
     padding-top: 64px;
   }
-  .main__title {
-    margin-bottom: 0;
+
+  .hero-container {
+    display: flex;
+    gap: 25px;
   }
+
   .hero__decor {
     height: 530px;
-    background: url('./../images/hero/hero-1-desktop.jpg') 0 100% / 310px auto
-        no-repeat,
-      url('./../images/hero/hero-2-desktop.jpg') 335px 0 / 648px auto no-repeat,
-      url('./../images/hero/hero-3-desktop.jpg') 1008px 0/312px auto no-repeat;
+    width: 983px;
+    background: url('./../images/hero/hero-1-desktop.jpg') 0 100% / 310px auto no-repeat,
+      url('./../images/hero/hero-2-desktop.jpg') 335px 0 / 648px auto no-repeat;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero__decor {
-      background: url('./../images/hero/hero-1-desktop-2x.jpg') 0 100% / 310px
-          auto no-repeat,
-        url('./../images/hero/hero-2-desktop-2x.jpg') 335px 0 / 648px auto
-          no-repeat,
-        url('./../images/hero/hero-3-desktop-2x.jpg') 1008px 0/312px auto
-          no-repeat;
-    }
-  }
-  .hero__decor {
-    display: flex;
-    justify-content: space-between;
-  }
+
   .hero__content {
-    align-self: flex-end;
+    margin-top: 0;
+    width: 312px;
+    background-image: url('./../images/hero/hero-3-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 337px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero__decor {
+      background: url('./../images/hero/hero-1-desktop-2x.jpg') 0 100% / 310px auto no-repeat,
+        url('./../images/hero/hero-2-desktop-2x.jpg') 335px 0 / 648px auto no-repeat;
+    }
+
+    .hero__content {
+      background-image: url('./../images/hero/hero-3-desktop-2x.jpg');
+    }
   }
 
   .hero__text {
-    margin-top: 59px;
     margin-bottom: 30px;
   }
 }
