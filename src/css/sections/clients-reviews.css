@@ -59,8 +59,7 @@
 }
 
 /* Mobile */
-@media screen and (min-width: 375px) {
-}
+@media screen and (min-width: 375px) {}
 
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -71,16 +70,13 @@
   .reviews-block {
     display: flex;
     width: 100%;
+    gap: 16px;
   }
 
   .client-img {
     display: block;
     width: 56px;
     height: 56px;
-  }
-
-  .reviews-list1 {
-    padding-right: 16px;
   }
 
   .client-name {
@@ -114,11 +110,6 @@
     padding: 32px;
   }
 
-  .reviews-list1,
-  .reviews-list2 {
-    padding-right: 24px;
-  }
-
   .reviews-comment {
     margin-top: 16px;
     font-size: 18px;
@@ -128,9 +119,14 @@
   .client-block {
     max-width: 424px;
   }
+
+  .reviews-block {
+    gap: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+
   .client-block-2,
   .client-block-3 {
     display: none;
