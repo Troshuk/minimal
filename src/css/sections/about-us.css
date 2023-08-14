@@ -1,3 +1,108 @@
 /*? ------------------------------- About Us ------------------------------- */
 
-.about-us {}
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.about-us-wrapper {
+    background-color: var(--color-light-blue);
+    padding: 64px 15px;
+}
+
+.about-us-title {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 50px;
+}
+
+.about-us-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: var(--color-blue);
+}
+
+.about-us-section-title {
+    margin-top: 30px;
+}
+
+.about-us-text {
+    margin-top: 30px;
+}
+
+.about-us-advantages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 33px;
+}
+
+.about-us-advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 170px;
+}
+
+.about-us-numbers {
+    font-size: 50px;
+}
+
+.about-us-advantage-text {
+    margin-top: 14px;
+    text-align: center;
+}
+
+/*? ------------------------ MEDIA ------------------------ */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .about-us {
+        margin-top: 100px;
+    }
+
+    .about-us-container {
+        padding: 0 var(--container-side-padding);
+        gap: 30px 24px;
+    }
+
+    .about-us-wrapper {
+        padding: 36px 64px;
+    }
+
+    .about-us-text {
+        font-size: 18px;
+    }
+
+    .about-us-advantages {
+        flex-direction: row;
+    }
+
+    .about-us-advantage-item {
+        width: calc((100% - 33px * 2) / 3);
+    }
+
+    .about-us-advantage-text {
+        font-size: 18px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .about-us-container {
+        flex-direction: row;
+    }
+
+    .about-us-wrapper {
+        padding: 36px 69px 34px;
+        max-width: 760px;
+    }
+}

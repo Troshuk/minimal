@@ -1,0 +1,60 @@
+body {
+    font-family: var(--main-font);
+    color: var(--color-blue);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container,
+.secondary-container {
+    width: 100%;
+    margin: 0 auto;
+    /* content width + 15px for each side (left and right) */
+    max-width: var(--container-max-width);
+    padding: 0 var(--container-side-padding);
+}
+
+.secondary-container {
+    /* content width + 15px for each side (left and right) */
+    max-width: var(--secondary-container-max-width);
+}
+
+.section-title {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/*? ------------------------ MEDIA ------------------------ */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    :root {
+        --container-width: var(--tablet-container-width);
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    :root {
+        --container-width: var(--desktop-container-width);
+        --secondary-container-width: var(--secondary-desktop-container-width);
+    }
+}
