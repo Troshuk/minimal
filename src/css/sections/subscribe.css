@@ -176,12 +176,10 @@
     width: 460px;
   }
   .container-img-subscribe {
-    max-height: 510px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
   }
-
   .img-sofa {
-    display: flex;
     gap: 30px;
   }
   .subscribe {
