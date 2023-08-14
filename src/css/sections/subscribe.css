@@ -64,7 +64,6 @@
   background-color: var(--color-blue);
   color: #fff;
   padding: 13px 94px;
-  margin-bottom: 30px;
 }
 
 .icon-error {
@@ -134,7 +133,9 @@
   fill: transparent;
   margin-right: 8px;
 }
-
+.form-for-subscibe {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .container-img-subscribe {
     flex-direction: column;
@@ -172,10 +173,6 @@
     margin-bottom: 20px;
   }
 
-  .button-modal-subscribe {
-    margin-bottom: 64px;
-  }
-
   .modal-described-subscribe {
     font-size: 18px;
     font-weight: 400;
@@ -192,9 +189,15 @@
     color: var(--color-grey);
     font-size: 18px;
   }
+  .form-for-subscibe {
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .form-for-subscibe {
+    margin-bottom: 0;
+  }
   .img-sofa {
     width: 460px;
   }
@@ -213,10 +216,6 @@
     font-size: 18px;
   }
 
-  .button-modal-subscribe {
-    margin-bottom: 0;
-  }
-
   .title-subscribe {
     font-size: 32px;
     line-height: 1.4;
@@ -233,6 +232,5 @@
 
   .button-modal-subscribe {
     width: 224px;
-    margin-bottom: 0;
   }
 }
