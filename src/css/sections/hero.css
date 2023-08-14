@@ -40,6 +40,7 @@
   color: var(--color-white);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero__btn:hover,
 .hero__btn:focus {
   background-color: #061835;
@@ -109,7 +110,9 @@
   .hero {
     padding-top: 64px;
   }
-
+  .main__title {
+    margin-bottom: 0;
+  }
   .hero__decor {
     height: 530px;
     background: url('./../images/hero/hero-1-desktop.jpg') 0 100% / 310px auto
