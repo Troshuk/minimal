@@ -36,7 +36,7 @@
   text-align: left;
 }
 
-.bestsellers-card:nth-child(n+3) {
+.bestsellers-card:nth-child(n+4) {
   display: none;
 }
 
@@ -85,7 +85,8 @@
   }
 
   .bestsellers-txt {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 
   .bestseller-list {

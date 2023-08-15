@@ -16,6 +16,8 @@
 }
 
 .footer {
+    padding-top: 36px;
+    padding-bottom: 16px;
     background-color: var(--color-blue);
 }
 
@@ -23,7 +25,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 36px;
 }
 
 .footer-first-block {
@@ -94,7 +95,6 @@
 
 }
 
-
 .footer-address-list {
     display: flex;
     row-gap: 8px;
@@ -138,7 +138,6 @@
 
 .footer-privacy {
     margin-top: 64px;
-    padding-bottom: 16px;
     color: var(--color-white);
     text-align: center;
     font-size: 12px;
@@ -154,12 +153,15 @@
 }
 
 @media screen and (min-width: 768px) {
+    .footer {
+        padding-bottom: 36px;
+    }
+
     .footer-container {
         max-width: 734px;
     }
 
     .footer-first-block {
-        display: flex;
         width: 548px;
         height: 310px;
         flex-wrap: wrap;
@@ -211,7 +213,7 @@
 
     .footer-contacts-list {
         gap: 24px;
-        padding-top: 32px;
+        margin-top: 32px;
     }
 
     .footer-contacts-email {
@@ -239,7 +241,6 @@
     }
 
     .footer-privacy {
-        padding-bottom: 36px;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
@@ -253,10 +254,8 @@
     }
 
     .footer-first-block {
-        display: flex;
         width: 854px;
         height: 128px;
-        flex-wrap: wrap;
         gap: 0 87px;
         justify-content: space-between;
     }
@@ -280,7 +279,9 @@
         gap: 24px 82px;
         flex-wrap: wrap;
         height: 68px;
-        padding: 0;
+        margin: 0;
+        align-items: flex-start;
+        align-content: flex-start;
     }
 
     .footer-contacts-item {
