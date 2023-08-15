@@ -1,91 +1,110 @@
-/*? ------------------------------- Header ------------------------------- */
-.header-container {display: flex;
-                   align-items: center;
-                   background-color:#F7FAFF ;}
-                   
-
-.list { list-style: none;}
-
-
-.link { text-decoration: none;}
-
-.header {  }
-
-
-
-.navigation {display: flex;
-            margin-top:26px;
-            margin-bottom:26px ; }
-
-
-.logo-head {margin-right: 520px; }
-
-
-
-.header-icon {margin-left: 60px;
-
- }
-
-
-.navigation-list {display: flex;
-                  align-items: center;
-                  gap:30px;
-                  
+.top-line {
+    position: fixed;
+    background-color: #F7FAFF;
+    width: 100%;
+    z-index: 100;
 }
 
-.navigation-item 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
 
-.navigation-link:hover {
-    color: #0A224A;
-} 
+.header-logo {
+    margin-right: 16px;
+    fill: transparent;
+}
 
-
-.navigation-link:focus {
-    color: #0A224A;
+.top-line-logo {
+   
 }
 
 
-
-.navigation-link {font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; }
-
-
-
-    /* mob menu */
-
-
-        .mob-menu {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            
-
-
-        }
-    
-        .mob-menu-list {}
-
-        .mob-menu-item { }
-
-        .mob-soc-link { }
-        .mob-menu-btn { }
-
-        .burger
-/* ----------------------------------------------------- */
-       /* MEDIA */
-/* Mobile */
-@media screen and (min-width: 375px) {
-    .header-list { display: none;}
-
-
-    
+.header-logo { 
+    margin-left: 16px;
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) {}
+.logo-icon {
+    margin-right: 8px;
+}
 
-/* Desktop */
-@media screen and (min-width: 1440px) {}
+.nav-main {
+    display: none;
+}
+
+.mod-open-btn {
+    display: none;
+}
+
+.mob-menu-btn {
+    border: none;
+    background-color: transparent;
+    transition: fill 250ms cubic-bezier(0.21, 0.91, 0.99, 0.12);
+}
+
+.mob-menu-btn:hover,
+.mob-menu-btn:focus {
+    fill: var(--bg-hero);
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-main {
+        display: flex;
+    }
+
+    .top-line-nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    .project-link {
+        text-align: center;
+        font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+        transition: color 250ms cubic-bezier(0.21, 0.91, 0.99, 0.12);
+    }
+
+    .project-link:hover,
+    .project-link:focus {
+        color: #0A224A;
+    }
+
+    .top-line-logo {
+        position: absolute;
+        left: 50%;
+    }
+
+
+
+    .header-logo {
+    margin-left: 16px;} 
+
+
+     
+    .mob-menu-btn {
+        display: none;
+    }
+
+    .mod-open-btn {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        transition: fill 250ms cubic-bezier(0.21, 0.91, 0.99, 0.12);
+    }
+
+    .mod-open-btn:hover,
+    .mod-open-btn:focus {
+        fill: #0A224A;
+    }
+}
