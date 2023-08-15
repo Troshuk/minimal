@@ -1,48 +1,55 @@
-<header class="top-line">
-  <div class="container header-container">
-    <nav class="nav-main">
-      <a class="top-line-logo" href="">
-        <svg class="header-logo" width="32" height="32">
+<header class="header">
+  <div class="container">
+    <nav class="header-navigation">
+      <a class="header-logo" href="./index.html">
+        <svg class="header-logo" width="100" height="16">
           <use href="./images/icons.svg#icon-logo"></use>
         </svg>
       </a>
 
-      <ul class="top-line-nav">
+      <ul class="header-navigation-menu">
         <li>
-          <a class="project-link first-child" href="#about-us">About us</a>
+          <a class="header-navigation-link" href="#about-us">About us</a>
         </li>
         <li>
-          <a class="project-link second-child" href="#out-products"
-            >Our products</a
-          >
+          <a class="header-navigation-link" href="#our-products">
+            Our products
+          </a>
         </li>
         <li>
-          <a class="project-link" href="#prices">Prices</a>
+          <a class="header-navigation-link" href="#price">Prices</a>
         </li>
         <li>
-          <a class="project-link" href="#bestsellers">Bestsellers</a>
+          <a class="header-navigation-link" href="#bestsellers">Bestsellers</a>
         </li>
         <li>
-          <a class="project-link" href="#bestsellers">Bestsellers</a>
+          <a class="header-navigation-link" href="#clients-reviews">Reviews</a>
         </li>
         <li>
-          <a class="project-link" href="#bestsellers">Reviews</a>
-        </li>
-        <li>
-          <a class="project-link last-child" href="#contacts">Contacts</a>
+          <a class="header-navigation-link" href="#subscribe-section">
+            Contacts
+          </a>
         </li>
       </ul>
+
+      <button
+        type="button"
+        class="open-menu-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="open-menu-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </nav>
 
-    <button type="button" class="mod-open-btn" data-modal-open>
-      <svg class="shop-bag" width="32" height="32">
-        <use href="./iages/icons.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <button class="mob-menu-btn" type="button" data-menu-open>
-      <svg class="burger" width="32" height="32">
-        <use href="./images/icons.svg#icon-x-close"></use>
-      </svg>
-    </button>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="close-menu-button js-close-menu" type="button">
+        <svg class="close-menu-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
