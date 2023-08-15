@@ -39,7 +39,7 @@
   transition: border-color var(--transition-time), var(--transition-function);
 }
 
-.input-check-subscribe:checked+.data-label-subscribe>.modal-span-subscribe {
+.input-check-subscribe:checked + .data-label-subscribe > .modal-span-subscribe {
   background-color: var(--color-blue);
   border: none;
   fill: transparent;
@@ -115,7 +115,7 @@
   color: red;
 }
 
-.input-modal-subscribe:invalid:not(:placeholder-shown)+.icon-error {
+.input-modal-subscribe:invalid:not(:placeholder-shown) + .icon-error {
   fill: red;
 }
 
@@ -137,7 +137,17 @@
 .form-for-subscibe {
   margin-bottom: 30px;
 }
-
+.input-check-subscribe:focus + .data-label-subscribe > .modal-span-subscribe {
+  border-color: var(--color-blue);
+}
+.input-check-subscribe:hover + .data-label-subscribe > .modal-span-subscribe {
+  border-color: var(--color-blue);
+}
+.button-modal-subscribe:hover,
+.button-modal-subscribe:focus {
+  background-color: #061835;
+  box-shadow: 0px 0px 0px 1px #061835, 0px 0px 10px #061835;
+}
 @media screen and (min-width: 768px) {
   .container-img-subscribe {
     flex-direction: column;
