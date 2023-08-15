@@ -1,3 +1,80 @@
 /*? ------------------------------- Price ------------------------------- */
 
-.price {}
+/* -------Mobile------- */
+
+.price {
+  padding-top: 64px;
+}
+
+.price-item {
+  padding: 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-top: 1px solid var(--color-blue);
+  /* top line over price items */
+}
+
+/* line before article names */
+.price-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 3px;
+  background-color: var(--color-blue);
+  opacity: 0;
+  transition: opacity var(--transition-time) var(--transition-function),
+    width var(--transition-time) var(--transition-function);
+}
+
+.price-item:hover {
+  cursor: pointer;
+  width: 100%;
+  left: 0;
+}
+
+/* bottom line under last price item */
+.price-item:last-child {
+  border-bottom: 1px solid var(--color-blue);
+}
+
+.price-item:hover::before {
+  opacity: 1;
+  width: 50px;
+}
+
+.price-item:hover .article-name {
+  transform: translateX(70px);
+  /* space between line and article name */
+}
+
+.article-name {
+  font-size: 28px;
+  text-transform: uppercase;
+  position: relative;
+  transition: transform var(--transition-time) var(--transition-function);
+}
+
+.article-price {
+  font-weight: 700;
+}
+
+/* -------Tablet------- */
+
+@media (min-width: 768px) {
+  .price {
+    padding-top: 100px;
+  }
+
+  .article-name {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .article-price {
+    font-size: 18px;
+  }
+}

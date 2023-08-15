@@ -1,3 +1,240 @@
 /*? ------------------------------- Subscribe ------------------------------- */
+.subscribe {
+  padding: 64px 0;
+}
 
-.subscribe {}
+.title-subscribe {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-described-subscribe {
+  color: var(--color-blue);
+  font-family: var(--main-font);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.data-form-container-subscribe {
+  margin-bottom: 20px;
+}
+
+.data-email-container-subscribe {
+  margin: 0;
+}
+
+.data-email-container-subscribe {
+  margin-bottom: 20px;
+}
+
+.input-modal-subscribe {
+  padding: 13px 20px;
+  border: 1px solid var(--color-dark-grey);
+  width: 100%;
+  height: 50px;
+  transition: border-color var(--transition-time), var(--transition-function);
+}
+
+.input-check-subscribe:checked+.data-label-subscribe>.modal-span-subscribe {
+  background-color: var(--color-blue);
+  border: none;
+  fill: transparent;
+  stroke: #ffffff;
+  border-color: var(--color-blue);
+}
+
+.data-label-subscribe {
+  color: #7a7a7a;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container-img-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-modal-subscribe {
+  background-color: var(--color-blue);
+  color: #fff;
+  padding: 13px 94px;
+}
+
+.icon-error {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  fill: transparent;
+}
+
+.wrapper-subscribe {
+  max-width: 536px;
+  position: relative;
+}
+
+.data-form-subscribe {
+  margin-bottom: 31px;
+}
+
+.input-modal-subscribe {
+  font-size: 16px;
+}
+
+.input-modal-subscribe::placeholder {
+  color: var(--color-grey);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.input-modal-subscribe:hover::placeholder {
+  color: var(--color-blue);
+  transition: color var(--transition-time), var(--transition-function);
+}
+
+.input-modal-subscribe:focus::placeholder {
+  color: var(--color-blue);
+  transition: color var(--transition-time), var(--transition-function);
+}
+
+.input-modal-subscribe:hover,
+.input-modal-subscribe:focus {
+  border-color: var(--color-blue);
+}
+
+.input-modal-subscribe:invalid:not(:placeholder-shown) {
+  border: 1px solid #e74a3b;
+  color: red;
+}
+
+.input-modal-subscribe:invalid:not(:placeholder-shown)+.icon-error {
+  fill: red;
+}
+
+.modal-span-subscribe {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color var(--transition-time),
+    var(--transition-function), border var(--transition-time),
+    var(--transition-function), fill var(--transition-time),
+    var(--transition-function);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.form-for-subscibe {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-img-subscribe {
+    flex-direction: column;
+  }
+
+  .input-modal-subscribe::placeholder {
+    font-size: 18px;
+  }
+
+  .input-modal-subscribe {
+    font-size: 18px;
+  }
+
+  .input-modal-subscribe {
+    padding: 11px 20px;
+  }
+
+  .subscribe {
+    padding: 100px 0;
+  }
+
+  .data-label-subscribe {
+    font-size: 18px;
+  }
+
+  .title-subscribe {
+    text-align: start;
+    font-size: 32px;
+    line-height: 1.46;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .data-form-container {
+    margin-bottom: 20px;
+  }
+
+  .modal-described-subscribe {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 536px;
+  }
+
+  .input-modal-subscribe {
+    width: 536px;
+  }
+
+  .input-modal-subscribe::placeholder {
+    color: var(--color-grey);
+    font-size: 18px;
+  }
+
+  .form-for-subscibe {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form-for-subscibe {
+    margin-bottom: 0;
+  }
+
+  .img-sofa {
+    width: 460px;
+  }
+
+  .container-img-subscribe {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .subscribe {
+    padding-bottom: 86px;
+  }
+
+  .input-modal-subscribe {
+    padding: 11px 20px;
+    font-size: 18px;
+  }
+
+  .title-subscribe {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 31px;
+  }
+
+  .modal-described-subscribe {
+    margin-bottom: 21px;
+  }
+
+  .data-form-container {
+    margin-bottom: 21px;
+  }
+
+  .button-modal-subscribe {
+    width: 224px;
+  }
+}
