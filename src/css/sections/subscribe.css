@@ -121,9 +121,11 @@
 .form-for-subscibe {
   margin-bottom: 30px;
 }
+
 .button-modal-subscribe:hover,
 .button-modal-subscribe:focus {
   background-color: #061835;
+  box-shadow: 0px 0px 0px 1px #061835, 0px 0px 10px #061835;
 }
 @media screen and (min-width: 768px) {
   .container-img-subscribe {
