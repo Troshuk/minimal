@@ -133,9 +133,11 @@
   fill: transparent;
   margin-right: 8px;
 }
+
 .form-for-subscibe {
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .container-img-subscribe {
     flex-direction: column;
@@ -189,6 +191,7 @@
     color: var(--color-grey);
     font-size: 18px;
   }
+
   .form-for-subscibe {
     margin-bottom: 64px;
   }
@@ -198,6 +201,7 @@
   .form-for-subscibe {
     margin-bottom: 0;
   }
+
   .img-sofa {
     width: 460px;
   }
