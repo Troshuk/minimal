@@ -121,7 +121,9 @@
 .form-for-subscibe {
   margin-bottom: 30px;
 }
-
+.input-check-subscribe:focus + .data-label-subscribe > .modal-span-subscribe {
+  border-color: var(--color-blue);
+}
 .button-modal-subscribe:hover,
 .button-modal-subscribe:focus {
   background-color: #061835;
