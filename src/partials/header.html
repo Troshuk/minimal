@@ -11,10 +11,8 @@
         <li>
           <a class="header-navigation-link" href="#about-us">About us</a>
         </li>
-        <li>
-          <a class="header-navigation-link" href="#our-products">
-            Our products
-          </a>
+        <li> 
+          <a class="header-navigation-link" href="#our-products">Our products</a>
         </li>
         <li>
           <a class="header-navigation-link" href="#price">Prices</a>
@@ -26,9 +24,7 @@
           <a class="header-navigation-link" href="#clients-reviews">Reviews</a>
         </li>
         <li>
-          <a class="header-navigation-link" href="#subscribe-section">
-            Contacts
-          </a>
+          <a class="header-navigation-link" href="#subscribe-section">Contacts</a>
         </li>
       </ul>
 
@@ -44,12 +40,44 @@
       </button>
     </nav>
 
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button class="close-menu-button js-close-menu" type="button">
-        <svg class="close-menu-icon" width="32" height="32">
-          <use href="./images/icons.svg#icon-x-close"></use>
-        </svg>
-      </button>
-    </div>
+    <div class="burger-container js-menu-container" id="mobile-menu">
+      <div class="burger-content">
+        <div class="burger-header">
+          <a href="#" class="logo">
+            <svg width="inherit" height="inherit">
+              <use href="./images/icons.svg#icon-logo"></use></svg>
+          </a>
+          <button type="button" class="toggle-close js-close-menu">
+            <svg fill="none" width="inhetit" height="inherit">
+              <use href="./images/icons.svg#icon-x-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <div class="burger-nav">
+        <nav class="burger-nav-menu">
+          <ul class="list">
+            <li class="link-line">
+              <a class="link js-close-menu pages" href="#about">About us</a>
+            </li>
+            <li class="link-line">
+              <a class="link js-close-menu pages" href="#products">Our products</a>
+            </li>
+            <li class="link-line">
+              <a class="link js-close-menu pages" href="#prices">Prices</a>
+            </li>
+            <li class="link-line">
+              <a class="link js-close-menu pages" href="#bestsellers">Bestsellers</a>
+            </li>
+            <li class="llink-line">
+              <a class="link js-close-menu pages" href="#reviews">Reviews</a>
+            </li>
+            <li class="link-line">
+              <a class="link js-close-menu pages" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
   </div>
 </header>
