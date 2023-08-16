@@ -3,13 +3,10 @@
     <symbol id="icon-exclamation-point-in-circle" viewBox="0 0 32 32">
       <path d="M14.667 20h2.667v2.667h-2.667V20zm0-10.667h2.667v8h-2.667v-8zm1.32-6.666C8.627 2.667 2.667 8.64 2.667 16s5.96 13.333 13.32 13.333c7.373 0 13.347-5.973 13.347-13.333S23.361 2.667 15.987 2.667zm.013 24c-5.893 0-10.667-4.773-10.667-10.667S10.106 5.333 16 5.333c5.893 0 10.667 4.773 10.667 10.667S21.894 26.667 16 26.667z"/>
     </symbol>
-    <symbol id="icon-menu" viewBox="0 0 32 32">
-      <path fill="none" stroke="#0a224a" style="stroke:var(--color1, #0a224a)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M28 13.333H4M28 8H4M28 18.667H4M28 24H4"/>
-    </symbol>
     <symbol id="icon-x-close" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
-    <symbol id="icon-menu1" viewBox="0 0 32 32">
+    <symbol id="icon-menu" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M28 13.333H4M28 8H4M28 18.667H4M28 24H4"/>
     </symbol>
     <symbol id="icon-youtube" viewBox="0 0 32 32">
