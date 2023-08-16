@@ -28,10 +28,13 @@
     display: none;
 }
 
+.product-name-container {
+    padding: 16px 0;
+}
+
 .product-name {
     font-size: 16px;
     font-weight: 400;
-    padding: 16px 0;
     text-align: center;
 }
 
@@ -53,8 +56,11 @@
         width: calc((100% - 16px) / 2);
     }
 
-    .product-name {
+    .product-name-container {
         padding: 15px 0;
+    }
+
+    .product-name {
         font-size: 18px;
     }
 

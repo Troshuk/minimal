@@ -18,6 +18,7 @@
 }
 
 .header-logo {
+  display: block;
   fill: var(--color-blue);
 }
 
@@ -74,6 +75,10 @@
   align-items: center;
   max-width: var(--container-width);
   margin: 0 auto;
+}
+
+.burger-header-logo-icon {
+  display: block;
 }
 
 .toggle-close {
@@ -165,7 +170,7 @@
 
 @media screen and (min-width: 1440px) {
   .header {
-    padding: 34px 0;
+    padding: 0;
   }
 
   .header-navigation-menu {
@@ -182,6 +187,7 @@
     line-height: 1.5;
     transition: color var(--transition-time) var(--transition-function);
     padding: 34px 0;
+    display: block;
   }
 
   .header-navigation-link:hover,
