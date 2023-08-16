@@ -1,3 +1,7 @@
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   position: sticky;
   top: 0;
