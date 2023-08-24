@@ -1,3 +1,13 @@
+@import 'swiper/css/bundle';
+
+.swiper {
+  padding: 0 var(--container-side-padding);
+}
+
+.swiper-pagination {
+  position: static;
+}
+
 /*? ------------------------------- Clients Reviews ------------------------------- */
 
 .clients-reviews {
@@ -17,7 +27,7 @@
   padding-left: 14px;
 }
 
-.client-block {
+.review-item {
   display: flex;
   flex-wrap: wrap;
   padding: 24px 23px 24px 24px;
@@ -25,10 +35,6 @@
   border-radius: 8px;
   max-width: 344px;
   height: auto;
-}
-
-.client-block:nth-child(n+2) {
-  display: none;
 }
 
 .client-name {
@@ -57,14 +63,8 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .client-block {
+  .review-item {
     padding: 24px;
-  }
-
-  .reviews-block {
-    display: flex;
-    width: 100%;
-    gap: 16px;
   }
 
   .client-img {
@@ -87,10 +87,6 @@
     font-size: 18px;
     line-height: 1.5;
   }
-
-  .client-block:nth-child(n+3) {
-    display: flex;
-  }
 }
 
 /* Desktop */
@@ -104,7 +100,7 @@
     flex-direction: row;
   }
 
-  .client-block {
+  .review-item {
     padding: 32px;
   }
 
@@ -114,12 +110,8 @@
     line-height: 1.5;
   }
 
-  .client-block {
+  .review-item {
     max-width: 424px;
-  }
-
-  .client-block:nth-child(n+2) {
-    display: flex;
   }
 
   .reviews-block {
