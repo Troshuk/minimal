@@ -33,12 +33,12 @@
     cursor: pointer;
     width: 80px;
     height: 90px;
-    z-index: 10;
-    transition: border var(--transition-time) var(--transition-function);
+    z-index: 4;
+    transition: width var(--transition-time) var(--transition-function);
 }
 
-.go-top:hover {
-    border: 1px solid var(--color-blue);
+.go-top:is(:hover, :focus) {
+    width: 90px;
 }
 
 .go-up-icon {

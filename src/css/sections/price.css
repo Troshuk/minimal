@@ -13,7 +13,9 @@
   align-items: center;
   position: relative;
   border-top: 1px solid var(--color-blue);
-  /* top line over price items */
+  cursor: pointer;
+  width: 100%;
+  left: 0;
 }
 
 /* line before article names */
@@ -22,18 +24,14 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 0px;
+  width: 0;
   height: 3px;
   background-color: var(--color-blue);
-  opacity: 0;
-  transition: opacity var(--transition-time) var(--transition-function),
-    width var(--transition-time) var(--transition-function);
+  transition: width var(--transition-time) var(--transition-function);
 }
 
-.price-item:hover {
-  cursor: pointer;
-  width: 100%;
-  left: 0;
+.price-item:hover::before {
+  width: 50px;
 }
 
 /* bottom line under last price item */
@@ -41,14 +39,8 @@
   border-bottom: 1px solid var(--color-blue);
 }
 
-.price-item:hover::before {
-  opacity: 1;
-  width: 50px;
-}
-
 .price-item:hover .article-name {
   transform: translateX(70px);
-  /* space between line and article name */
 }
 
 .article-name {
