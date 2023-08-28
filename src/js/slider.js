@@ -1,9 +1,9 @@
 import Swiper from 'swiper/bundle';
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.reviews-swiper', {
 	keyboard: true,
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.reviews-pagination',
 		clickable: true,
 	},
 
@@ -19,6 +19,29 @@ const swiper = new Swiper('.swiper', {
 		1440: {
 			slidesPerView: 3,
 			spaceBetween: 0,
+		},
+	},
+});
+
+new Swiper('.products-swiper', {
+	keyboard: true,
+	pagination: {
+		el: '.products-pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 16,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 16,
+		},
+		1440: {
+			slidesPerView: 4,
+			spaceBetween: 24,
 		},
 	},
 });

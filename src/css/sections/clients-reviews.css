@@ -1,13 +1,3 @@
-@import 'swiper/css/bundle';
-
-.swiper {
-  padding: 0 var(--container-side-padding);
-}
-
-.swiper-pagination {
-  position: static;
-}
-
 /*? ------------------------------- Clients Reviews ------------------------------- */
 
 .clients-reviews {

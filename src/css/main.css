@@ -11,6 +11,9 @@
 /*? Default styles */
 @import url('./defaults.css');
 
+/*? Slider */
+@import 'swiper/css/bundle';
+
 /*? Header */
 @import url('./sections/header.css');
 
@@ -25,6 +28,12 @@
 
 /*? Footer */
 @import url('./sections/footer.css');
+
+.swiper-pagination {
+    position: static;
+}
+
+/*? Go Up Button */
 
 .go-top {
     position: fixed;

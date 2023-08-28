@@ -1,108 +1,114 @@
 <section class="product-section" id="our-products">
-  <div class="container">
-    <h2 class="section-title product-title">Our Products</h2>
+	<div class="container">
+		<h2 class="section-title product-title">Our Products</h2>
+		<div class="swiper products-swiper">
+			<ul class="products-list swiper-wrapper">
+				<li class="product-item swiper-slide">
+					<picture>
+						<source
+							srcset="
+								./images/our-products/our-product-1-desktop.jpg    1x,
+								./images/our-products/our-product-1-desktop-2x.jpg 2x
+							"
+							media="(min-width: 1440px)"
+						/>
+						<source
+							srcset="
+								./images/our-products/our-product-1-tablet.jpg    1x,
+								./images/our-products/our-product-1-tablet-2x.jpg 2x
+							"
+							media="(min-width: 768px)"
+						/>
+						<source
+							srcset="
+								./images/our-products/our-product-1-mobile.jpg    1x,
+								./images/our-products/our-product-1-mobile-2x.jpg 2x
+							"
+							media="(max-width: 767px)"
+						/>
+						<img
+							src="./images/our-products/our-product-1-tablet-2x.jpg"
+							alt="product-1"
+							class="products-image"
+							width="344"
+						/>
+					</picture>
+					<div class="product-name-container">
+						<h3 class="product-name">Minimalist storage solutions</h3>
+					</div>
+				</li>
 
-    <ul class="products-list">
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="
-              ./images/our-products/our-product-1-desktop.jpg    1x,
-              ./images/our-products/our-product-1-desktop-2x.jpg 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <source
-            srcset="
-              ./images/our-products/our-product-1-tablet.jpg    1x,
-              ./images/our-products/our-product-1-tablet-2x.jpg 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/our-products/our-product-1-mobile.jpg    1x,
-              ./images/our-products/our-product-1-mobile-2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <img
-            src="./images/our-products/our-product-1-tablet-2x.jpg"
-            alt="product-1"
-            width="344"
-          />
-        </picture>
-        <div class="product-name-container">
-          <h3 class="product-name">Minimalist storage solutions</h3>
-        </div>
-      </li>
+				<li class="product-item swiper-slide">
+					<picture>
+						<source
+							srcset="
+								./images/our-products/our-product-2-desktop.jpg    1x,
+								./images/our-products/our-product-2-desktop-2x.jpg 2x
+							"
+							media="(min-width: 1440px)"
+						/>
+						<source
+							srcset="
+								./images/our-products/our-product-2-tablet.jpg    1x,
+								./images/our-products/our-product-2-tablet-2x.jpg 2x
+							"
+							media="(min-width: 768px)"
+						/>
+						<img
+							src="./images/our-products/our-product-2-tablet-2x.jpg"
+							alt="product-2"
+							width="344"
+							class="products-image"
+						/>
+					</picture>
+					<div class="product-name-container">
+						<h3 class="product-name">Handcrafted minimalist seating</h3>
+					</div>
+				</li>
 
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="
-              ./images/our-products/our-product-2-desktop.jpg    1x,
-              ./images/our-products/our-product-2-desktop-2x.jpg 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <source
-            srcset="
-              ./images/our-products/our-product-2-tablet.jpg    1x,
-              ./images/our-products/our-product-2-tablet-2x.jpg 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./images/our-products/our-product-2-tablet-2x.jpg"
-            alt="product-2"
-            width="344"
-          />
-        </picture>
-        <div class="product-name-container">
-          <h3 class="product-name">Handcrafted minimalist seating</h3>
-        </div>
-      </li>
+				<li class="product-item swiper-slide">
+					<picture>
+						<source
+							srcset="
+								./images/our-products/our-product-3-desktop.jpg    1x,
+								./images/our-products/our-product-3-desktop-2x.jpg 2x
+							"
+							media="(min-width: 1440px)"
+						/>
+						<img
+							src="./images/our-products/our-product-3-desktop-2x.jpg"
+							alt="product-3"
+							width="312"
+							class="products-image"
+						/>
+					</picture>
+					<div class="product-name-container">
+						<h3 class="product-name">Sleek and simple tables</h3>
+					</div>
+				</li>
 
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="
-              ./images/our-products/our-product-3-desktop.jpg    1x,
-              ./images/our-products/our-product-3-desktop-2x.jpg 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <img
-            src="./images/our-products/our-product-3-desktop-2x.jpg"
-            alt="product-3"
-            width="312"
-          />
-        </picture>
-        <div class="product-name-container">
-          <h3 class="product-name">Sleek and simple tables</h3>
-        </div>
-      </li>
-
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="
-              ./images/our-products/our-product-4-desktop.jpg    1x,
-              ./images/our-products/our-product-4-desktop-2x.jpg 2x
-            "
-            media="(min-width: 1440px)"
-          />
-          <img
-            src="./images/our-products/our-product-4-desktop-2x.jpg"
-            alt="product-4"
-            width="312"
-          />
-        </picture>
-        <div class="product-name-container">
-          <h3 class="product-name">Minimalist seating for every space</h3>
-        </div>
-      </li>
-    </ul>
-  </div>
+				<li class="product-item swiper-slide">
+					<picture>
+						<source
+							srcset="
+								./images/our-products/our-product-4-desktop.jpg    1x,
+								./images/our-products/our-product-4-desktop-2x.jpg 2x
+							"
+							media="(min-width: 1440px)"
+						/>
+						<img
+							src="./images/our-products/our-product-4-desktop-2x.jpg"
+							alt="product-4"
+							width="312"
+							class="products-image"
+						/>
+					</picture>
+					<div class="product-name-container">
+						<h3 class="product-name">Minimalist seating for every space</h3>
+					</div>
+				</li>
+			</ul>
+			<div class="swiper-pagination products-pagination"></div>
+		</div>
+	</div>
 </section>
